@@ -11,6 +11,16 @@ import UIKit
 
 @IBDesignable open class ShadowView: UIView {
     
+    
+    @IBInspectable var cornerRadius: CGFloat = 10
+    @IBInspectable public var borderWidth: CGFloat = 0.0
+    @IBInspectable public var shadowRadius: CGFloat = 5.0
+    @IBInspectable public var shadowOpacity: Float = 0.5
+    @IBInspectable public var borderColor: UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1.0)
+    @IBInspectable public var shadowColor: UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1.0)
+    @IBInspectable public var shadowOffset: CGSize = CGSize(width: 0, height: 4)
+    
+    
     private func setupValues(){
         self.layer.cornerRadius = self.cornerRadius
         self.layer.shadowColor = self.shadowColor.cgColor
@@ -31,13 +41,7 @@ import UIKit
         self.setupValues()
     }
     
-    @IBInspectable var cornerRadius: CGFloat = 10
-    @IBInspectable public var borderWidth: CGFloat = 0.0
-    @IBInspectable public var shadowRadius: CGFloat = 5.0
-    @IBInspectable public var shadowOpacity: Float = 0.5
-    @IBInspectable public var borderColor: UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1.0)
-    @IBInspectable public var shadowColor: UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1.0)
-    @IBInspectable public var shadowOffset: CGSize = CGSize(width: 0, height: 4)
+    
     
 }
 
