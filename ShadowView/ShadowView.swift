@@ -15,10 +15,10 @@ import UIKit
     @IBInspectable var cornerRadius: CGFloat = 10
     @IBInspectable public var borderWidth: CGFloat = 0.0
     @IBInspectable public var shadowRadius: CGFloat = 5.0
-    @IBInspectable public var shadowOpacity: Float = 2.0
+    @IBInspectable public var shadowOpacity: Float = 1.0
     @IBInspectable public var borderColor: UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 1.0)
-    @IBInspectable public var shadowColor: UIColor = UIColor.init(red: 102, green: 220, blue: 140, alpha: 1.0)
-    @IBInspectable public var shadowOffset: CGSize = CGSize(width: 4, height: 4)
+    @IBInspectable public var shadowColor: UIColor = UIColor.init(red: 241.0/255.0, green: 90.0/255.0, blue: 40.0/255.0, alpha: 1.0)
+    @IBInspectable public var shadowOffset: CGSize = CGSize(width: 1, height: 1)
     
     
     private func setupValues(){
